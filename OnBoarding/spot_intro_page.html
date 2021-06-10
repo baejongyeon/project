@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <script src="/jquery/jquery-3.6.0.js"></script>
+    <script src="/bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+    <link href="/bxslider-4-4.2.12/src/css/jquery.bxslider.css" rel="stylesheet" />
+
+    <script>
+        $(function () {
+            $(".main_menu").mouseenter(function () {
+                $(this).children(".sub_menu").stop().slideDown(500);
+
+            });
+            $(".main_menu").mouseleave(function () {
+                $(this).children(".sub_menu").stop().slideUp(500);
+            });
+        });
+
+
+
+
+
+    </script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        #container {
+            width: 1200px;
+            margin: 0 auto;
+            background-image: url(/img/logo_img-removebg-preview.png);
+            background-repeat: no-repeat;
+            background-position-x: right;
+        }
+
+        header {
+            width: 1200px;
+            padding-top: 30px;
+            box-sizing: border-box;
+
+        }
+
+        .logo {
+            text-align: center;
+
+
+        }
+
+        header img {
+            width: 60px;
+            height: 45px;
+
+        }
+
+        .logo_txt {
+            font-size: 45px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+
+        }
+
+        nav {
+            padding-top: 30px;
+
+
+        }
+
+        #container_menu {
+            display: inline-block;
+            padding-left: 30px;
+            text-align: center;
+
+
+        }
+
+        #container_menu>ul {
+            list-style-type: none;
+            float: left;
+        }
+
+        .sub_menu>li {
+            list-style-type: none;
+
+        }
+
+
+        .main_menu>li>a:link,
+        .main_menu>li>a:visited {
+            font-size: 16px;
+            font-weight: bold;
+            width: 150px;
+            padding: 16px 16px;
+            line-height: 20px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            color: black;
+
+        }
+
+        .main_menu>li>a:hover {
+            color: rgb(199, 136, 54);
+
+        }
+
+        .sub_menu>li>a:link,
+        .sub_menu>li>a:visited {
+            font-size: 14px;
+            color: black;
+            width: 150px;
+            padding: 17px 16px;
+            line-height: 16px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+
+        }
+
+        .sub_menu>li>a:hover {
+            color: rgb(199, 136, 54);
+        }
+
+        .sub_menu {
+            display: none;
+
+
+        }
+
+        .register {
+            height: 100%;
+            padding: 5px 0px;
+            width: 200px;
+            float: right;
+        }
+
+        figure figcaption {
+            float: left;
+            height: 50px;
+            padding-left: 5px;
+        }
+
+        figure figcaption a {
+            font-size: 14px;
+            line-height: 45px;
+        }
+
+        figure a:link,
+        figure a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        figure a:hover {
+            color: rgb(199, 136, 54);
+        }
+
+
+
+
+
+
+        #spot {
+            width: 1000px;
+            margin-left: 100px;
+            margin-top: 100px;
+            
+            
+        }
+       
+
+        .map_size {
+            width: 500px;
+            height: 400px;
+            padding-top: 30px;
+        }
+
+        .map_txt{
+            padding-top: 30px;
+        }
+        
+        th{
+            float: left;
+            
+        }
+        
+
+
+
+
+        footer {
+            background-color: rgba(128, 128, 128, 0.397);
+            padding-top: 80ox;
+            width: 100%;
+            height: 70px;
+        }
+
+        footer a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div class="logo">
+                <div>
+                    <a href="/OnBoarding/mainpage.html"><img src="/img/logo_img-removebg-preview.png"></a><a
+                        href="/OnBoarding/mainpage.html" class="logo_txt">Onboarding</a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div id="container_menu">
+                <ul class="main_menu">
+                    <li><a href="#">HOME</a></li>
+                    <ul class="sub_menu">
+
+                    </ul>
+                </ul>
+                <ul class="main_menu">
+                    <li><a href="#">GALLERY</a></li>
+                    <ul class="sub_menu">
+                        <li><a href="#">보드</a></li>
+                        <li><a href="#">패션</a></li>
+                        <li><a href="#">자유</a></li>
+                    </ul>
+                </ul>
+                <ul class="main_menu">
+                    <li><a href="#">SPOT</a></li>
+                    <ul class="sub_menu">
+                        <li><a href="#">스팟 소개</a></li>
+                        <li><a href="#">스팟 추천</a></li>
+
+                    </ul>
+                </ul>
+                <ul class="main_menu">
+                    <li><a href="#">PARTY</a></li>
+                    <ul class="sub_menu">
+                        <li><a href="#">파티 게시판</a></li>
+
+                    </ul>
+                </ul>
+
+            </div>
+            <div class="register">
+                <figure>
+                    <figcaption>
+                        <a href="/OnBoarding/login_page.html">로그인</a> | <a href="#">회원가입</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </nav>
+
+        <section>
+            <article>
+
+                <div id="spot">
+                    <h2>라온제나 스케이트 파크</h2>
+                    <div class="map_size">
+                        <a href="#">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.009886221712!2d127.06418131470016!3d37.53126423390628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5028dcd9737%3A0x7bc7531a9970f07d!2z65qd7ISs7Jyg7JuQ7KeA7JetM-uyiOy2nOq1rA!5e0!3m2!1sko!2skr!4v1622771622385!5m2!1sko!2skr"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </a>
+                    </div>
+                    <div class="map_txt">
+                        
+                        <table>
+                            <th><위치 정보></th>
+                            <tr>
+                                <th>주소</th>
+                                <td>:</td>
+                                <td>서울특별시 광진구 자양3동 427-20</td>
+                            </tr>
+                            <tr>
+                                <th>찾아가는 법</th>
+                                <td>:</td>
+                                <td>지하철 7호선 뚝섬유원지역 하차 -> 2번 출구에서 자전거 도로를 따라 도보 5분(약 200미터)</td>
+                            </tr>
+                        
+                            <th>Location Information</th>
+                            <tr>
+                                <th>address</th>
+                                <td>:</td>
+                                <td>Jayang 3-dong 427-20, Gwangjin-gu, Seoul, Korea</td>
+                            </tr>
+                            <tr>
+                                <th>How to go</th>
+                                <td>:</td>
+                                <td>Amusemet Park ttukseom Subway Station Line 7 -> Exit 2 left out oi</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+
+            </article>
+
+            <article>
+
+                <div id="spot">
+                    <h2>라온제나 스케이트 파크</h2>
+                    <div class="map_size">
+                        <a href="#">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.515196231221!2d126.9640053150542!3d37.51935097980677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1f0b8075d2b%3A0xed3b35f698ef4e9!2z7ZWc6rCVIOydtOy0jCDsiqTsvIDsnbTtirgg7YyM7YGsKEhhbiByaXZlciBpY2hvbiBza2F0ZSBwYXJrKSB8!5e0!3m2!1sko!2skr!4v1623285865957!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </a>
+                    </div>
+                    <div class="map_txt">
+                        
+                        <table>
+                            <th><위치 정보></th>
+                            <tr>
+                                <th>주소</th>
+                                <td>:</td>
+                                <td>서울특별시 용산구</td>
+                            </tr>
+                            <tr>
+                                <th>찾아가는 법</th>
+                                <td>:</td>
+                                <td>지하철 7호선 뚝섬유원지역 하차 -> 2번 출구에서 자전거 도로를 따라 도보 5분(약 200미터)</td>
+                            </tr>
+                        
+                            <th>Location Information</th>
+                            <tr>
+                                <th>address</th>
+                                <td>:</td>
+                                <td>Jayang 3-dong 427-20, Gwangjin-gu, Seoul, Korea</td>
+                            </tr>
+                            <tr>
+                                <th>How to go</th>
+                                <td>:</td>
+                                <td>Amusemet Park ttukseom Subway Station Line 7 -> Exit 2 left out oi</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+
+            </article>
+
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div>
+            <a href="#">이용약관</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">adout</a>
+            <a href="#">help</a>
+        </div>
+    </footer>
+</body>
+
+</html>
